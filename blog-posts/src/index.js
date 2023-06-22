@@ -1,27 +1,14 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
+import Profile1 from './images/pic1.jpg'
+import SingleComment from "./SingleComment";
 
 const App = () => {
     return(
         <div className='ui comments'>
-            <div className="comment">
-                <a href="/" className='avatar'>
-                    <img alt="profile picture"/>
-                </a>
-                <div className="content">
-                    <a href="/" className='author'>
-                        Sarah
-                    </a>
-                    <div className="metadata">
-                        <span className='date'>
-                            Today at 5:00PM
-                        </span>
-                        <div className="text">
-                            It's amazing
-                        </div>
-                    </div>
-                </div>
-            </div>
+            <SingleComment />
+            <SingleComment />
+            <SingleComment />
         </div>
     )
 }
